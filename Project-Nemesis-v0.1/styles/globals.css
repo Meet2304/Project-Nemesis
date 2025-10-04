@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #0C1F33;
+    --color-gold: #C6A34F;
+    --color-neutral: #F8F9FA;
+    --color-text: #0E1113;
+  }
+
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-nemesis-neutral text-nemesis-text;
+  }
+
+  /* Focus visible styles for accessibility */
+  :focus-visible {
+    @apply outline-none ring ring-nemesis-gold ring-offset-2;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply absolute left-0 top-0 z-50 -translate-y-full px-4 py-2 bg-nemesis-navy text-white;
+    @apply focus:translate-y-0 transition-transform;
+  }
+}

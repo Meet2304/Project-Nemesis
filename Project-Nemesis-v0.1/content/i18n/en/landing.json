@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "mission": "Building a transparent, efficient, and accessible justice system for all.",
+    "tagline": "Modern court management that serves the public good.",
+    "cta": "Request a Demo"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "pillars": {
+    "transparency": {
+      "title": "Transparency",
+      "desc": "Open access to case information and court proceedings builds public trust and accountability."
+    },
+    "efficiency": {
+      "title": "Efficiency",
+      "desc": "Streamlined workflows reduce delays, lower costs, and improve outcomes for all parties."
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "desc": "Inclusive design ensures everyone can navigate the justice system with dignity and ease."
+    },
+    "trust": {
+      "title": "Trust & Accountability",
+      "desc": "Rigorous standards and clear oversight protect the integrity of judicial processes."
+    }
+  },
+  "domains": {
+    "case-intake": {
+      "name": "Case Intake",
+      "summary": "Efficient digital filing and classification of new cases with automated validation and routing."
+    },
+    "scheduling": {
+      "name": "Scheduling",
+      "summary": "Intelligent calendar management coordinating judges, attorneys, and parties with conflict detection."
+    },
+    "digital-records": {
+      "name": "Digital Records",
+      "summary": "Secure, searchable document management with audit trails and retention compliance."
+    },
+    "public-access": {
+      "name": "Public Access",
+      "summary": "Transparent portal for case lookups, hearing schedules, and public records requests."
+    }
+  },
+  "footer": {
+    "contactLinkLabel": "Contact Us",
+    "contactEmail": "contact@projectnemesis.gov",
+    "version": "Version",
+    "disclaimer": "Project Nemesis is a modernization initiative for court management systems."
+  }
+}
