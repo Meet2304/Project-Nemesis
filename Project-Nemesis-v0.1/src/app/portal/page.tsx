@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
 import {
   Home,
@@ -101,7 +102,7 @@ export default function Portal() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton size="lg" asChild>
-                  <a href="/">
+                  <Link href="/">
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-judicial-navy text-judicial-gold">
                       <GalleryVerticalEnd className="h-4 w-4" />
                     </div>
@@ -109,7 +110,7 @@ export default function Portal() {
                       <span className="font-semibold">Project Nemesis</span>
                       <span className="text-xs">Judicial Management</span>
                     </div>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
@@ -123,10 +124,10 @@ export default function Portal() {
                   {navigationItems.map((item) => (
                     <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild isActive={item.isActive}>
-                        <a href={item.url}>
+                        <Link href={item.url}>
                           <item.icon className="h-4 w-4" />
                           <span>{item.title}</span>
-                        </a>
+                        </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   ))}
@@ -140,18 +141,18 @@ export default function Portal() {
                 <SidebarMenu>
                   <SidebarMenuItem>
                     <SidebarMenuButton asChild>
-                      <a href="/portal/profile">
+                      <Link href="/portal/profile">
                         <User className="h-4 w-4" />
                         <span>Profile</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                   <SidebarMenuItem>
                     <SidebarMenuButton asChild>
-                      <a href="/portal/settings">
+                      <Link href="/portal/settings">
                         <Settings className="h-4 w-4" />
                         <span>Settings</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 </SidebarMenu>
@@ -195,7 +196,7 @@ export default function Portal() {
                 Welcome back, {user?.name}
               </h2>
               <p className="text-gray-600">
-                Here's an overview of your judicial management activities
+                Here&apos;s an overview of your judicial management activities
               </p>
             </div>
 
