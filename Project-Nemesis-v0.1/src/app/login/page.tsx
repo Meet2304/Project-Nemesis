@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { GalleryVerticalEnd } from "lucide-react";
 import { useAuth } from '@/contexts/AuthContext';
 import { cn } from "@/lib/utils";
@@ -119,10 +120,12 @@ export default function Login() {
         </div>
       </div>
       <div className="relative hidden bg-muted lg:block">
-        <img
-          src="https://via.placeholder.com/1920x1080/1e3a5f/d4af37?text=Justice+Management+System"
+        <Image
+          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1920"
           alt="Judicial System"
-          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.7]"
+          fill
+          className="object-cover dark:brightness-[0.7]"
+          priority
         />
       </div>
     </div>
